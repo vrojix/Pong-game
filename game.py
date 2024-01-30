@@ -106,7 +106,8 @@ while True:
         right_paddle.y+=vel
     if keys[pygame.K_UP] and (right_paddle.y - vel) >= 0:
         right_paddle.y-=vel
-    
+    if keys[pygame.K_ESCAPE]:
+        pygame.event.wait()
 
     screen.fill((30, 30, 30))
     bounce()
