@@ -2,7 +2,7 @@ import pygame,sys
 import random
 score = 0
 right_score = 0
-
+pygame.time.wait(100)
 
 def restart():
     pygame.time.wait(200)
